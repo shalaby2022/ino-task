@@ -1,0 +1,384 @@
+{
+  "info": {
+    "_postman_id": "c06377b0-6f5e-4666-9860-a890b54e1849",
+    "name": "junior frontend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "23159361"
+  },
+  "item": [
+    {
+      "name": "Gym",
+      "item": [
+        {
+          "name": "Explore gyms",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}/gyms?lat=31.2443512&long=29.9715685&page_number=1&page_size=10&search_diameter=1000",
+              "host": ["{{base_url}}"],
+              "path": ["gyms"],
+              "query": [
+                {
+                  "key": "lat",
+                  "value": "31.2443512"
+                },
+                {
+                  "key": "long",
+                  "value": "29.9715685"
+                },
+                {
+                  "key": "page_number",
+                  "value": "1"
+                },
+                {
+                  "key": "page_size",
+                  "value": "10"
+                },
+                {
+                  "key": "search_diameter",
+                  "value": "1000"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Explore gyms",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "{{app_token}}"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "type": "text",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "url": "{{base_url}}/gyms"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"53f139b727593883fc92e1fe468f4795\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "e1e52bd6-6fb2-4de9-b6dd-16c490eabdd8"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "0.080312"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"address\": \"alexandria\",\n            \"district\": \"gleem\",\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": \"\",\n            \"description\": \"descrisssption3\",\n            \"gender_type\": \"females_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.12,\n            \"name\": \"Gym4444444\",\n            \"owner_id\": 6,\n            \"email\": \"saadbadie@gmail.com\",\n            \"phone_number\": \"1282893613\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 2,\n            \"is_hot_deal\": true,\n            \"is_featured\": true,\n            \"user_role\": \"gym\",\n            \"source\": \"fb\"\n        },\n        {\n            \"id\": 5,\n            \"address\": \"egypt\",\n            \"district\": null,\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": null,\n            \"description\": \"description3\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.336,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.333,\n            \"name\": \"Gym3\",\n            \"owner_id\": 13,\n            \"email\": \"\",\n            \"phone_number\": \"1282794872\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 0,\n            \"is_hot_deal\": false,\n            \"is_featured\": true,\n            \"user_role\": \"gym\",\n            \"source\": \"app\"\n        },\n        {\n            \"id\": 3,\n            \"address\": \"egypt\",\n            \"district\": null,\n            \"commercial_file_url\": \"http://file.localdomain.tld\",\n            \"dynamic_link\": null,\n            \"description\": \"description3\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf3\",\n            \"long\": 24.12,\n            \"name\": \"Gym3\",\n            \"owner_id\": 7,\n            \"email\": \"ahmed.mamdouh+12@gmail.com\",\n            \"phone_number\": \"1282894613\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": true,\n            \"rate\": 0,\n            \"is_hot_deal\": false,\n            \"is_featured\": false,\n            \"user_role\": \"gym\",\n            \"source\": \"twitter\"\n        },\n        {\n            \"id\": 25,\n            \"address\": null,\n            \"district\": null,\n            \"commercial_file_url\": null,\n            \"dynamic_link\": null,\n            \"description\": \"description\",\n            \"gender_type\": \"males_only\",\n            \"status\": \"accepted\",\n            \"lat\": 23.2,\n            \"logo_img_url\": \"sdfsdflddf\",\n            \"long\": 24.12,\n            \"name\": \"Gym\",\n            \"owner_id\": 34,\n            \"email\": \"heba.mamdouh+17770@inovaeg.com\",\n            \"phone_number\": \"1287298872\",\n            \"country_code\": \"+20\",\n            \"enable_notification\": true,\n            \"phone_verified\": false,\n            \"rate\": 0,\n            \"is_hot_deal\": true,\n            \"is_featured\": false,\n            \"user_role\": \"gym\",\n            \"source\": \"app\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Gym Info",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}/gyms/:gym_id",
+              "host": ["{{base_url}}"],
+              "path": ["gyms", ":gym_id"],
+              "variable": [
+                {
+                  "key": "gym_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Gym Info",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "{{app_token}}",
+                    "disabled": true
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "type": "text",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "url": "{{base_url}}/gyms/1"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"e7101359ece43149bf3a36d1a92d49b1\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "df5fed1e-13f8-4510-be95-3f728070f45d"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "0.133762"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Server",
+                  "value": "thin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 1,\n        \"address\": \"Details address\",\n        \"commercial_file_url\": null,\n        \"dynamic_link\": null,\n        \"description\": \"description\",\n        \"gender_type\": \"males_only\",\n        \"lat\": 23.33,\n        \"logo_img_url\": \"sdfsdflddf\",\n        \"long\": 24.22,\n        \"name\": \"Gym\",\n        \"owner_id\": 1,\n        \"rate\": 0,\n        \"is_hot_deal\": false,\n        \"is_member\": false,\n        \"gym_hours\": [\n            {\n                \"id\": 1,\n                \"gym_id\": 1,\n                \"from\": \"2000-01-01T09:00:00.000Z\",\n                \"to\": \"2000-01-01T12:00:00.000Z\",\n                \"gym_hour_days\": [\n                    {\n                        \"id\": 1,\n                        \"gym_hour_id\": 1,\n                        \"day\": \"Sat\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"gym_hour_id\": 1,\n                        \"day\": \"Sun\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"gym_hour_id\": 1,\n                        \"day\": \"Mon\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"gym_hour_id\": 1,\n                        \"day\": \"Tue\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"gym_hour_id\": 1,\n                        \"day\": \"Wed\"\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"gym_id\": 1,\n                \"from\": \"2000-01-01T12:00:00.000Z\",\n                \"to\": \"2000-01-01T23:00:00.000Z\",\n                \"gym_hour_days\": [\n                    {\n                        \"id\": 6,\n                        \"gym_hour_id\": 2,\n                        \"day\": \"Thu\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"gym_hour_id\": 2,\n                        \"day\": \"Fri\"\n                    }\n                ]\n            }\n        ],\n        \"tags\": [\n            {\n                \"id\": 1,\n                \"name\": \"fitness\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Weights\"\n            }\n        ],\n        \"facilities\": [\n            {\n                \"id\": 1,\n                \"icon_url\": null,\n                \"name\": \"Free Wi-Fi\"\n            },\n            {\n                \"id\": 2,\n                \"icon_url\": null,\n                \"name\": \"Sauna\"\n            },\n            {\n                \"id\": 3,\n                \"icon_url\": null,\n                \"name\": \"Towels\"\n            },\n            {\n                \"id\": 4,\n                \"icon_url\": null,\n                \"name\": \"Nutritional Counseling\"\n            },\n            {\n                \"id\": 5,\n                \"icon_url\": null,\n                \"name\": \"Pool\"\n            },\n            {\n                \"id\": 6,\n                \"icon_url\": null,\n                \"name\": \"Lockers\"\n            },\n            {\n                \"id\": 7,\n                \"icon_url\": null,\n                \"name\": \"Showers\"\n            },\n            {\n                \"id\": 8,\n                \"icon_url\": \"https://algym-files.s3.us-west-2.amazonaws.com/wifi.png\",\n                \"name\": \"Steam room\"\n            }\n        ],\n        \"gym_social_medias\": [\n            {\n                \"id\": 1,\n                \"social_media_url\": \"facbook.png\",\n                \"gym_id\": 1,\n                \"social_media\": \"Facebook\"\n            },\n            {\n                \"id\": 2,\n                \"social_media_url\": \"instagram.png\",\n                \"gym_id\": 1,\n                \"social_media\": \"Instagram\"\n            },\n            {\n                \"id\": 3,\n                \"social_media_url\": \"twitter.png\",\n                \"gym_id\": 1,\n                \"social_media\": \"Twitter\"\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Gym classes",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"page_number\": 1,\n\t\"page_size\": 10\n\t \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/gyms/:gym_id/gym_classes",
+              "host": ["{{base_url}}"],
+              "path": ["gyms", ":gym_id", "gym_classes"],
+              "variable": [
+                {
+                  "key": "gym_id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Gym classes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "{{app_token}}",
+                    "disabled": true
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "type": "text",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "url": "{{base_url}}/gyms/1/gym_classes"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"c2a3b709b82d7d30d0fe75076d662b59\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "1ddfdcd2-c771-4cd2-879d-a5ab5ed37e96"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "0.020639"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "Server",
+                  "value": "thin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam\",\n            \"name\": \"Package covers Gym, Mat Exercise…\",\n            \"price\": 2400,\n            \"gym_id\": 1,\n            \"available_places\": 50,\n            \"class_type\": \"fixed\",\n            \"consume_within\": null,\n            \"end_date\": null,\n            \"sessions_number\": 12,\n            \"start_date\": null,\n            \"gym_class_hours\": [\n                {\n                    \"id\": 1,\n                    \"from\": \"2000-01-01T09:00:00.000Z\",\n                    \"to\": \"2000-01-01T12:00:00.000Z\",\n                    \"gym_class_id\": 1,\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 1,\n                            \"gym_class_hour_id\": 1,\n                            \"day\": \"Sat\"\n                        },\n                        {\n                            \"id\": 2,\n                            \"gym_class_hour_id\": 1,\n                            \"day\": \"Sun\"\n                        },\n                        {\n                            \"id\": 3,\n                            \"gym_class_hour_id\": 1,\n                            \"day\": \"Mon\"\n                        },\n                        {\n                            \"id\": 4,\n                            \"gym_class_hour_id\": 1,\n                            \"day\": \"Tue\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"from\": \"2000-01-01T13:00:00.000Z\",\n                    \"to\": \"2000-01-01T21:00:00.000Z\",\n                    \"gym_class_id\": 1,\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 5,\n                            \"gym_class_hour_id\": 2,\n                            \"day\": \"Wed\"\n                        },\n                        {\n                            \"id\": 6,\n                            \"gym_class_hour_id\": 2,\n                            \"day\": \"Thu\"\n                        },\n                        {\n                            \"id\": 7,\n                            \"gym_class_hour_id\": 2,\n                            \"day\": \"Fri\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam\",\n            \"name\": \"Package covers Gym, Mat Exercise…\",\n            \"price\": 3000,\n            \"gym_id\": 1,\n            \"available_places\": 40,\n            \"class_type\": \"flexible\",\n            \"consume_within\": 3,\n            \"end_date\": null,\n            \"sessions_number\": 14,\n            \"start_date\": null,\n            \"gym_class_hours\": [\n                {\n                    \"id\": 3,\n                    \"from\": \"2000-01-01T11:00:00.000Z\",\n                    \"to\": \"2000-01-01T16:00:00.000Z\",\n                    \"gym_class_id\": 2,\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 8,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Sat\"\n                        },\n                        {\n                            \"id\": 9,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Sun\"\n                        },\n                        {\n                            \"id\": 10,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Mon\"\n                        },\n                        {\n                            \"id\": 11,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Tue\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 4,\n                    \"from\": \"2000-01-01T17:00:00.000Z\",\n                    \"to\": \"2000-01-01T23:00:00.000Z\",\n                    \"gym_class_id\": 2,\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 12,\n                            \"gym_class_hour_id\": 4,\n                            \"day\": \"Wed\"\n                        },\n                        {\n                            \"id\": 13,\n                            \"gym_class_hour_id\": 4,\n                            \"day\": \"Thu\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+            },
+            {
+              "name": "Gym classes (updated)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "{{app_token}}",
+                    "disabled": true
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "type": "text",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Timezone",
+                    "value": "{{time_zone}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{base_url}}/gyms/2/gym_classes"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"dca5fcaccf1a702fe072cb9afe376940\""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "X-Request-Id",
+                  "value": "b63ddaf4-2c63-4c03-a5ed-c2db07a326f2"
+                },
+                {
+                  "key": "X-Runtime",
+                  "value": "0.282069"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"price\": 300,\n            \"gym_id\": 2,\n            \"available_places\": 10,\n            \"class_type\": \"fixed\",\n            \"consume_within\": null,\n            \"end_date\": \"2020-10-03T00:00:00.000Z\",\n            \"sessions_number\": 8,\n            \"start_date\": \"2020-03-03T00:00:00.000Z\",\n            \"description\": \"decription\",\n            \"description_ar\": \"description ar\",\n            \"name\": \"name   mlklkl \",\n            \"name_ar\": \"name arjjjjj\",\n            \"description_displayed\": \"decription\",\n            \"name_displayed\": \"name   mlklkl \",\n            \"gym_class_hours\": [\n                {\n                    \"id\": 3,\n                    \"gym_class_id\": 1,\n                    \"from\": \"2000-01-01T12:00:00.000+02:00\",\n                    \"to\": \"2000-01-01T22:00:00.000+02:00\",\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 1,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Thu\"\n                        },\n                        {\n                            \"id\": 2,\n                            \"gym_class_hour_id\": 3,\n                            \"day\": \"Tue\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 4,\n                    \"gym_class_id\": 1,\n                    \"from\": \"2000-01-01T09:00:00.000+02:00\",\n                    \"to\": \"2000-01-01T12:00:00.000+02:00\",\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 3,\n                            \"gym_class_hour_id\": 4,\n                            \"day\": \"Sat\"\n                        },\n                        {\n                            \"id\": 4,\n                            \"gym_class_hour_id\": 4,\n                            \"day\": \"Sun\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 5,\n                    \"gym_class_id\": 1,\n                    \"from\": \"2000-01-01T06:00:00.000+02:00\",\n                    \"to\": \"2000-01-01T09:00:00.000+02:00\",\n                    \"gym_class_hour_days\": [\n                        {\n                            \"id\": 5,\n                            \"gym_class_hour_id\": 5,\n                            \"day\": \"Mon\"\n                        },\n                        {\n                            \"id\": 6,\n                            \"gym_class_hour_id\": 5,\n                            \"day\": \"Fri\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
