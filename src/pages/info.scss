@@ -1,0 +1,29 @@
+.infoContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem;
+
+  .generalInfo {
+    .itemsContainer {
+      display: flex;
+      flex-wrap: wrap;
+
+      .w-75 {
+        .data {
+          display: flex;
+        }
+      }
+    }
+  }
+  .about {
+    padding: 3rem 0rem;
+  }
+  .tags {
+    padding: 3rem 0rem;
+  }
+  .facilities {
+    padding: 2rem 0rem;
+  }
+  .contacts {
+  }
+}

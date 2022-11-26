@@ -6,7 +6,6 @@ import PaginationElement from "../../components/pagination/Pagination";
 
 const List = () => {
   const [data, setData] = useState([]);
-  console.log(data);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(3);
 
@@ -25,7 +24,7 @@ const List = () => {
   const currentPost = data.slice(firstPostIndex, lastPostIndex);
 
   return (
-    <div className="container">
+    <div className="listcontainer">
       <div className="btns-container">
         <div className="search-container">
           <input type="text" placeholder="Search by name, facilities" />

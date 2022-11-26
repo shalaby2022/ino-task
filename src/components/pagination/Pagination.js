@@ -8,7 +8,7 @@ const PaginationElement = ({ totalData, dataPerPage, setCurrentPage }) => {
     pages.push(i);
   }
   return (
-    <div className="containe">
+    <div className="paginationcontainer">
       {pages.map((page, ind) => (
         <button key={ind} onClick={() => setCurrentPage(page)}>
           {page}

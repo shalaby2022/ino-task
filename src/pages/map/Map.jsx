@@ -1,11 +1,10 @@
 import React from "react";
 import "./map.scss";
 import { Link } from "react-router-dom";
-import Footer from "../../components/footer/Footer";
 
 const Map = () => {
   return (
-    <div className="container">
+    <div className="mapcontainer">
       <div className="btns-container">
         <div className="search-container">
           <input type="text" placeholder="Search by name, facilities" />
