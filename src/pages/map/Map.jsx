@@ -17,7 +17,6 @@ const Map = () => {
             SWITCH TO LIST VIEW
           </Link>
         </button>
-        <Footer />
       </div>
     </div>
   );

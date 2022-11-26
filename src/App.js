@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import List from "./pages/list/List";
 import ListDetails from "./pages/listDetails/ListDetails";
 import Map from "./pages/map/Map";
-
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
           <Route path="/list/:id" element={<ListDetails />} />
           <Route path="/map" element={<Map />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
