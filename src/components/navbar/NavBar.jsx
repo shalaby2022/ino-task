@@ -6,9 +6,9 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
       <Container>
-        <Navbar.Brand href="/list" className="text-alert fw-bold  fs-3">
+        <Navbar.Brand href="/list" className="text-dark fw-bold  fs-3">
           ALGYM
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -22,7 +22,9 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">العربيه</Nav.Link>
+            <Nav.Link href="#deets" className="text-dark">
+              العربيه
+            </Nav.Link>
             <Nav.Link href="#" className="fw-bold fs-6 btns">
               SIGN IN
             </Nav.Link>
