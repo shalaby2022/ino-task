@@ -39,7 +39,7 @@ const List = () => {
       </div>
 
       <div className="data">
-        <h2 className="text-start fw-bold">All</h2>
+        <h2 className="text-start fw-bold ps-5">All</h2>
         <div className="list-container">
           {currentPost &&
             currentPost.map((item, ind) => (

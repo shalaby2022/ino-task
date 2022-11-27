@@ -8,7 +8,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 const ListDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
-  const [details, setDetails] = useState([]);
 
   useEffect(() => {
     const fetchData = () => {
@@ -18,12 +17,10 @@ const ListDetails = () => {
         .catch((err) => console.log("error", err));
     };
     fetchData();
-
-    let info = data.filter((item) => item.id === id);
-    setDetails(info);
-    console.log(details);
   }, []);
 
+  let details = data.filter((item) => item.recipe_id === id);
+  console.log(details);
   return (
     <div className="detailscontainer">
       <div className="explore">
@@ -81,7 +78,7 @@ const ListDetails = () => {
         <hr />
       </div>
       <div className="">
-        <Outlet />
+        <Outlet data={details} />
       </div>
     </div>
   );

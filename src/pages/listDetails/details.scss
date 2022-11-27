@@ -79,6 +79,7 @@
           color: rgb(91, 16, 196);
           cursor: pointer;
           font-weight: bold;
+
           &::after,
           &::selection {
             content: "";

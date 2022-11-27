@@ -6,7 +6,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LoyaltyIcon from "@mui/icons-material/Loyalty";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
 
-const Info = () => {
+const Info = (props) => {
+  console.log(props);
   return (
     <div className="infoContainer">
       <div className="generalInfo">
